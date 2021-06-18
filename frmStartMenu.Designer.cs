@@ -30,9 +30,8 @@ namespace LanguageLearningGame
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStartMenu));
-            this.btnEnglish = new System.Windows.Forms.Button();
-            this.btnStart = new System.Windows.Forms.Button();
             this.btnAfrikaans = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.lblChoose = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
@@ -43,23 +42,23 @@ namespace LanguageLearningGame
             ((System.ComponentModel.ISupportInitialize)(this.lblLogoImg)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnEnglish
+            // btnAfrikaans
             // 
-            this.btnEnglish.BackColor = System.Drawing.Color.SpringGreen;
-            this.btnEnglish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEnglish.FlatAppearance.BorderSize = 0;
-            this.btnEnglish.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnglish.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnglish.Location = new System.Drawing.Point(119, 295);
-            this.btnEnglish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnEnglish.Name = "btnEnglish";
-            this.btnEnglish.Size = new System.Drawing.Size(225, 60);
-            this.btnEnglish.TabIndex = 0;
-            this.btnEnglish.Text = "Afrikaans";
-            this.btnEnglish.UseVisualStyleBackColor = false;
-            this.btnEnglish.Visible = false;
-            this.btnEnglish.Click += new System.EventHandler(this.btnEnglish_Click);
+            this.btnAfrikaans.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnAfrikaans.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAfrikaans.FlatAppearance.BorderSize = 0;
+            this.btnAfrikaans.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAfrikaans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAfrikaans.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAfrikaans.Location = new System.Drawing.Point(119, 342);
+            this.btnAfrikaans.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAfrikaans.Name = "btnAfrikaans";
+            this.btnAfrikaans.Size = new System.Drawing.Size(225, 60);
+            this.btnAfrikaans.TabIndex = 0;
+            this.btnAfrikaans.Text = "Afrikaans";
+            this.btnAfrikaans.UseVisualStyleBackColor = false;
+            this.btnAfrikaans.Visible = false;
+            this.btnAfrikaans.Click += new System.EventHandler(this.btnEnglish_Click);
             // 
             // btnStart
             // 
@@ -69,32 +68,14 @@ namespace LanguageLearningGame
             this.btnStart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(119, 350);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStart.Location = new System.Drawing.Point(119, 342);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(225, 60);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // btnAfrikaans
-            // 
-            this.btnAfrikaans.BackColor = System.Drawing.Color.SpringGreen;
-            this.btnAfrikaans.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAfrikaans.FlatAppearance.BorderSize = 0;
-            this.btnAfrikaans.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAfrikaans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAfrikaans.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAfrikaans.Location = new System.Drawing.Point(119, 404);
-            this.btnAfrikaans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAfrikaans.Name = "btnAfrikaans";
-            this.btnAfrikaans.Size = new System.Drawing.Size(225, 60);
-            this.btnAfrikaans.TabIndex = 2;
-            this.btnAfrikaans.Text = "English";
-            this.btnAfrikaans.UseVisualStyleBackColor = false;
-            this.btnAfrikaans.Visible = false;
-            this.btnAfrikaans.Click += new System.EventHandler(this.btnAfrikaans_Click);
             // 
             // lblChoose
             // 
@@ -131,7 +112,7 @@ namespace LanguageLearningGame
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.Location = new System.Drawing.Point(16, 17);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(88, 46);
             this.btnBack.TabIndex = 5;
@@ -146,7 +127,7 @@ namespace LanguageLearningGame
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(365, 24);
+            this.button1.Location = new System.Drawing.Point(372, 24);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 33);
@@ -162,7 +143,7 @@ namespace LanguageLearningGame
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(420, 24);
+            this.button2.Location = new System.Drawing.Point(427, 24);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 33);
@@ -175,7 +156,7 @@ namespace LanguageLearningGame
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(284, 27);
+            this.label2.Location = new System.Drawing.Point(291, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 26);
             this.label2.TabIndex = 9;
@@ -207,12 +188,11 @@ namespace LanguageLearningGame
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblChoose);
-            this.Controls.Add(this.btnAfrikaans);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.btnEnglish);
+            this.Controls.Add(this.btnAfrikaans);
             this.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmStartMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Start Menu";
@@ -225,9 +205,8 @@ namespace LanguageLearningGame
 
         #endregion
 
-        private System.Windows.Forms.Button btnEnglish;
-        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnAfrikaans;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblChoose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBack;

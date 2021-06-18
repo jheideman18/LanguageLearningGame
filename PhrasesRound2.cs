@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*Jody Heideman
+ * 219307725
+ * 18 June 2021
+ * 
+ */
 namespace LanguageLearningGame
 {
     public partial class PhrasesRound2 : Form
@@ -26,39 +30,46 @@ namespace LanguageLearningGame
        
 
         int clicks = 0;
-
+        int attempts = 4;
 
         public int scoreG = 0;
         PhrasesRound3 Round3 = new PhrasesRound3();
+        System.Media.SoundPlayer btnCorrect = new System.Media.SoundPlayer(Properties.Resources.Correct);
+        System.Media.SoundPlayer btnWrong = new System.Media.SoundPlayer(Properties.Resources.Wrong);
         System.Media.SoundPlayer btnClick = new System.Media.SoundPlayer(Properties.Resources.button_Click);
         public void Verify()
         {
 
-            if (btnOptionTwoIsClicked || btnOptionThreeIsClicked || btnOptionFourIsClicked)
+
+            if (btnOptionOneIsClicked)
             {
-                MessageBox.Show("Incorrect");
-            }
-            else if(btnOptionOneIsClicked)
-            {
-                
+                btnCorrect.Play();
                 scoreG += 1;
+                Round3.scoreG = scoreG;
 
                 lblScore.Text = scoreG.ToString();
-                Round3.scoreG = scoreG;
-                
+                MessageBox.Show("That is correct!");
+
                 btnContinue.Visible = true;
                 btnCheck.Visible = false;
+
             }
-            
+            else
+            {
+                btnWrong.Play();
+                MessageBox.Show("That is not correct\nAttempts left: " + (attempts - clicks).ToString());
+            }
+
 
         }
         private void btnCheck_Click(object sender, EventArgs e)
         {
+            clicks++;
             btnClick.Play();
             Verify();
-            clicks++;
+           
 
-            if (clicks == 3)
+            if (clicks == 4)
             {
                 MessageBox.Show("Attempts maxed out\nCorrect answer was 'The bird flies in the sky'");
 

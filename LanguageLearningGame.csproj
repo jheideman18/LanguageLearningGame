@@ -110,12 +110,6 @@
     <Compile Include="PhrasesRound1.Designer.cs">
       <DependentUpon>PhrasesRound1.cs</DependentUpon>
     </Compile>
-    <Compile Include="LearnGreetingsRound4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LearnGreetingsRound4.Designer.cs">
-      <DependentUpon>LearnGreetingsRound4.cs</DependentUpon>
-    </Compile>
     <Compile Include="LearnGreetingsRound3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,9 +153,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhrasesRound1.resx">
       <DependentUpon>PhrasesRound1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LearnGreetingsRound4.resx">
-      <DependentUpon>LearnGreetingsRound4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LearnGreetingsRound3.resx">
       <DependentUpon>LearnGreetingsRound3.cs</DependentUpon>
@@ -276,6 +267,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Sounds&amp;Images\MatchImages\crow - logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds&amp;Images\Sounds\Welkom.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds&amp;Images\Sounds\Hoe gaan Dit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds&amp;Images\Sounds\Totsiens.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds&amp;Images\Sounds\Goeie more.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

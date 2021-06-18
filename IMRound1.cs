@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*Jody Heideman
+ * 219307725
+ * 18 June 2021
+ * 
+ */
 namespace LanguageLearningGame
 {
     public partial class IMRound1 : Form
@@ -18,9 +23,13 @@ namespace LanguageLearningGame
            
         }
         System.Media.SoundPlayer btnClick = new System.Media.SoundPlayer(Properties.Resources.button_Click);
-        bool btnOption4IsClicked;
-        int clicked = 1;
 
+        System.Media.SoundPlayer btnCorrect = new System.Media.SoundPlayer(Properties.Resources.Correct);
+        System.Media.SoundPlayer btnWrong = new System.Media.SoundPlayer(Properties.Resources.Wrong);
+        bool btnOption4IsClicked;
+        int clicked = 0;
+        int attempts = 3;
+        
 
         public int scoreG = 0;
         IMRound2 Round2 = new IMRound2();
@@ -29,6 +38,7 @@ namespace LanguageLearningGame
         {
             if (btnOption4IsClicked)
             {
+                btnCorrect.Play();
                 scoreG += 1;
                 lblScore.Text = scoreG.ToString();
                 btnOption1.Enabled = false;
@@ -38,26 +48,38 @@ namespace LanguageLearningGame
                 Round2.scoreG = scoreG;
                 btnContinue.Visible = true;
 
-            }else if (clicked.Equals(3))
-            {
-                btnOption1.Enabled = false;
-                btnOption2.Enabled = false;
-                btnOption3.Enabled = false;
-                btnContinue.Visible = true;
-                MessageBox.Show("The correct answer was the 'Car'");
             }
             else
             {
-                MessageBox.Show("Incorrect");
-                
+                btnWrong.Play();
+                MessageBox.Show("That is not correct\nAttempts left: " + (attempts - clicked).ToString());
+
             }
         }
         private void btnCheck_Click(object sender, EventArgs e)
         {
-            btnClick.Play();
-
-            Verify();
             clicked++;
+            btnClick.Play();
+            Verify();
+            
+
+            if (clicked == 3)
+            {
+                MessageBox.Show("Attempts maxed out");
+                scoreG += 0;
+
+                btnOption1.Enabled = false;
+                btnOption2.Enabled = false;
+                btnOption3.Enabled = false;
+                btnOption4.Enabled = false;
+
+                Round2.scoreG = scoreG;
+
+
+                btnContinue.Visible = true;
+                btnCheck.Enabled = false;
+            }
+           
            
         }
 

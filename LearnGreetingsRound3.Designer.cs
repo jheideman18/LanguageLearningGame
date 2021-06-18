@@ -145,7 +145,7 @@ namespace LanguageLearningGame
             this.btnSound1.Name = "btnSound1";
             this.btnSound1.Size = new System.Drawing.Size(152, 47);
             this.btnSound1.TabIndex = 7;
-            this.btnSound1.Text = "Good Morning";
+            this.btnSound1.Text = "Goeie more";
             this.btnSound1.UseVisualStyleBackColor = false;
             this.btnSound1.Click += new System.EventHandler(this.btnSound1_Click);
             // 
@@ -177,7 +177,7 @@ namespace LanguageLearningGame
             this.btnSound2.Name = "btnSound2";
             this.btnSound2.Size = new System.Drawing.Size(135, 47);
             this.btnSound2.TabIndex = 9;
-            this.btnSound2.Text = "How are you?";
+            this.btnSound2.Text = "Hoe gaan dit?";
             this.btnSound2.UseVisualStyleBackColor = false;
             this.btnSound2.Click += new System.EventHandler(this.btnSound2_Click);
             // 

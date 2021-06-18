@@ -41,6 +41,7 @@ namespace LanguageLearningGame
             this.lblScore = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAudio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +86,7 @@ namespace LanguageLearningGame
             this.btnSound1.Name = "btnSound1";
             this.btnSound1.Size = new System.Drawing.Size(117, 47);
             this.btnSound1.TabIndex = 3;
-            this.btnSound1.Text = "Hello";
+            this.btnSound1.Text = "Hallo";
             this.btnSound1.UseVisualStyleBackColor = false;
             this.btnSound1.Click += new System.EventHandler(this.btnSound1_Click);
             // 
@@ -101,7 +102,7 @@ namespace LanguageLearningGame
             this.btnSound2.Name = "btnSound2";
             this.btnSound2.Size = new System.Drawing.Size(117, 47);
             this.btnSound2.TabIndex = 4;
-            this.btnSound2.Text = "Bye";
+            this.btnSound2.Text = "Totsiens";
             this.btnSound2.UseVisualStyleBackColor = false;
             this.btnSound2.Click += new System.EventHandler(this.btnSound2_Click);
             // 
@@ -117,7 +118,7 @@ namespace LanguageLearningGame
             this.btnSound3.Name = "btnSound3";
             this.btnSound3.Size = new System.Drawing.Size(117, 47);
             this.btnSound3.TabIndex = 5;
-            this.btnSound3.Text = "Welcome";
+            this.btnSound3.Text = "Welkom";
             this.btnSound3.UseVisualStyleBackColor = false;
             this.btnSound3.Click += new System.EventHandler(this.btnSound3_Click);
             // 
@@ -200,12 +201,29 @@ namespace LanguageLearningGame
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAudio
+            // 
+            this.btnAudio.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAudio.FlatAppearance.BorderSize = 0;
+            this.btnAudio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btnAudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAudio.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAudio.Location = new System.Drawing.Point(21, 153);
+            this.btnAudio.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAudio.Name = "btnAudio";
+            this.btnAudio.Size = new System.Drawing.Size(117, 47);
+            this.btnAudio.TabIndex = 13;
+            this.btnAudio.Text = "Audio";
+            this.btnAudio.UseVisualStyleBackColor = false;
+            this.btnAudio.Click += new System.EventHandler(this.btnAudio_Click);
+            // 
             // LearnGreetings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(735, 684);
+            this.Controls.Add(this.btnAudio);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblScore);
@@ -243,5 +261,6 @@ namespace LanguageLearningGame
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAudio;
     }
 }

@@ -9,6 +9,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*Jody Heideman
+ * 219307725
+ * 18 June 2021
+ * 
+ */
+
 namespace LanguageLearningGame
 {
     public partial class frmStartMenu : Form
@@ -44,7 +50,7 @@ namespace LanguageLearningGame
         {
             btnClick.Play();
 
-            btnEnglish.Visible = true;
+            
             btnAfrikaans.Visible = true;
             btnStart.Visible = false;
         }
@@ -53,7 +59,7 @@ namespace LanguageLearningGame
         {
             btnClick.Play();
 
-            btnEnglish.Visible = false;
+            
             btnAfrikaans.Visible = false;
             btnStart.Visible = true;
         }

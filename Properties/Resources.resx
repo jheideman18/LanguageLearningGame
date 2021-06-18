@@ -145,11 +145,17 @@
   <data name="Free_Synthwave_Loop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Sounds&amp;Images\Sounds\Free Synthwave Loop.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Goeie_more" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds&amp;Images\Sounds\Goeie more.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Hallo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Sounds&amp;Images\Sounds\Hallo.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Hello" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Sounds&amp;Images\MatchImages\Hello.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hoe_gaan_Dit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds&amp;Images\Sounds\Hoe gaan Dit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Sounds&amp;Images\MatchImages\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,6 +180,12 @@
   </data>
   <data name="tips_48x33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Sounds&amp;Images\MatchImages\tips_48x33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Totsiens" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds&amp;Images\Sounds\Totsiens.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Welkom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds&amp;Images\Sounds\Welkom.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Won" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Sounds&amp;Images\Sounds\Won.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

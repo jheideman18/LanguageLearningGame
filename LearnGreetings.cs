@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*Jody Heideman
+ * 219307725
+ * 18 June 2021
+ * 
+ */
 namespace LanguageLearningGame
 {
     public partial class LearnGreetings : Form
@@ -20,31 +24,43 @@ namespace LanguageLearningGame
       
         bool btnSound2IsClicked;
         bool btnSound3IsClicked;
+        bool btnSound1IsClicked;
         public int scoreG = 0;
 
+        System.Media.SoundPlayer btnCorrect = new System.Media.SoundPlayer(Properties.Resources.Correct);
+        System.Media.SoundPlayer btnWrong = new System.Media.SoundPlayer(Properties.Resources.Wrong);
 
-        // System.Media.SoundPlayer sndHallo = new System.Media.SoundPlayer(Properties.Resources.Hallo);
+        System.Media.SoundPlayer sndHallo = new System.Media.SoundPlayer(Properties.Resources.Hallo);
+        System.Media.SoundPlayer sndWelkom = new System.Media.SoundPlayer(Properties.Resources.Welkom);
+        System.Media.SoundPlayer sndTot = new System.Media.SoundPlayer(Properties.Resources.Totsiens);
         System.Media.SoundPlayer btnClick = new System.Media.SoundPlayer(Properties.Resources.button_Click);
 
 
         public void Verify()
         {
-            if(btnSound2IsClicked || btnSound3IsClicked)
+            if(btnSound1IsClicked)
             {
-                MessageBox.Show("Incorrect");
-               
-            }
-            else
-            {
+                btnCorrect.Play();
                 scoreG += 1;
                 lblScore.Text = scoreG.ToString();
 
-                MessageBox.Show("Score " + scoreG);
+                MessageBox.Show("That was correct! ");
 
                 learnGreetingsRound2.scoreG += scoreG;
-              
+
                 btnCheck.Visible = false;
                 btnContinue.Visible = true;
+
+              
+            }
+            else 
+            {
+                btnWrong.Play();
+                scoreG += 0;
+                lblScore.Text = scoreG.ToString();
+                MessageBox.Show("That was inncorrect the correct answer was: " + "Hallo");
+                btnContinue.Visible = true;
+                btnCheck.Visible = false;
             }
 
             
@@ -66,22 +82,23 @@ namespace LanguageLearningGame
 
         private void btnSound1_Click(object sender, EventArgs e)
         {
-            btnClick.Play();
-            // sndHallo.Play();
-            //  btnSound1IsClicked = true;
+            sndHallo.Play();
+            btnSound1IsClicked = true;
+
 
             btnCheck.Enabled = true;
         }
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
+            
             btnClick.Play();
             Verify();
         }
 
         private void btnSound2_Click(object sender, EventArgs e)
         {
-            btnClick.Play();
+            sndTot.Play();
 
             btnSound2IsClicked = true;
            
@@ -91,7 +108,7 @@ namespace LanguageLearningGame
 
         private void btnSound3_Click(object sender, EventArgs e)
         {
-            btnClick.Play();
+            sndWelkom.Play();
             btnSound3IsClicked = true;
 
             btnCheck.Enabled = true;
@@ -107,13 +124,17 @@ namespace LanguageLearningGame
 
         private void btnTips_Click(object sender, EventArgs e)
         {
-            btnClick.Play();
-            MessageBox.Show("Click on the word that dire");
+           
         }
 
         private void LearnGreetings_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAudio_Click(object sender, EventArgs e)
+        {
+            sndHallo.Play();
         }
     }
 }

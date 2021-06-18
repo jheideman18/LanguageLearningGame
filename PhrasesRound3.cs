@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*Jody Heideman
+ * 219307725
+ * 18 June 2021
+ * 
+ */
 namespace LanguageLearningGame
 {
     public partial class PhrasesRound3 : Form
@@ -26,41 +30,57 @@ namespace LanguageLearningGame
        
 
         int clicks = 0;
-
+        int attempts = 4;
 
         public int scoreG = 0;
         frmMainMenu mainMenu = new frmMainMenu();
+        System.Media.SoundPlayer btnCorrect = new System.Media.SoundPlayer(Properties.Resources.Correct);
+        System.Media.SoundPlayer btnWrong = new System.Media.SoundPlayer(Properties.Resources.Wrong);
+        System.Media.SoundPlayer btnWon = new System.Media.SoundPlayer(Properties.Resources.Won);
+        System.Media.SoundPlayer btnLost = new System.Media.SoundPlayer(Properties.Resources.Lost);
         System.Media.SoundPlayer btnClick = new System.Media.SoundPlayer(Properties.Resources.button_Click);
         public void Verify()
         {
 
-            if (btnOptionTwoIsClicked || btnOptionThreeIsClicked || btnOptionFourIsClicked)
-            {
-                MessageBox.Show("Incorrect");
-            }
-            else if(btnOptionOneIsClicked)
-            {
-               
-                MessageBox.Show("Lesson complete!");
 
+            if (btnOptionOneIsClicked)
+            {
+                btnCorrect.Play();
                 scoreG += 1;
-
-                lblScore.Text = scoreG.ToString();
                 mainMenu.scoreG = scoreG;
-                
+
+                if (scoreG == 3)
+                {
+                    MessageBox.Show("That was correct! ");
+                    btnWon.PlayLooping();
+                }
+                else
+                {
+                    MessageBox.Show("You didn't do so well ");
+                    btnLost.PlayLooping();
+                }
+                lblScore.Text = scoreG.ToString();
+                MessageBox.Show("That is correct!");
+
                 btnContinue.Visible = true;
                 btnCheck.Visible = false;
+
             }
-            
+            else
+            {
+                btnWrong.Play();
+                MessageBox.Show("That is not correct\nAttempts left: " + (attempts - clicks).ToString());
+            }
+
 
         }
         private void btnCheck_Click(object sender, EventArgs e)
         {
+            clicks++;
             btnClick.Play();
             Verify();
-            clicks++;
 
-            if (clicks == 3)
+            if (clicks == 4)
             {
                 MessageBox.Show("Attempts maxed out\nCorrect answer was 'The bird flies in the sky'");
 
@@ -71,6 +91,7 @@ namespace LanguageLearningGame
                 scoreG += 0;
 
                 btnContinue.Visible = true;
+                btnCheck.Enabled = false;
             }
 
         }
@@ -162,7 +183,10 @@ namespace LanguageLearningGame
 
         private void btnSound_Click(object sender, EventArgs e)
         {
+            
             btnClick.Play();
+            btnLost.Stop();
+            btnWon.Stop();
         }
 
         private void btnOption3_Click(object sender, EventArgs e)

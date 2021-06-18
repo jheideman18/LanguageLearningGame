@@ -150,6 +150,15 @@ namespace LanguageLearningGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Goeie_more {
+            get {
+                return ResourceManager.GetStream("Goeie_more", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Hallo {
             get {
                 return ResourceManager.GetStream("Hallo", resourceCulture);
@@ -163,6 +172,15 @@ namespace LanguageLearningGame.Properties {
             get {
                 object obj = ResourceManager.GetObject("Hello", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Hoe_gaan_Dit {
+            get {
+                return ResourceManager.GetStream("Hoe_gaan_Dit", resourceCulture);
             }
         }
         
@@ -242,6 +260,24 @@ namespace LanguageLearningGame.Properties {
             get {
                 object obj = ResourceManager.GetObject("tips_48x33", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Totsiens {
+            get {
+                return ResourceManager.GetStream("Totsiens", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Welkom {
+            get {
+                return ResourceManager.GetStream("Welkom", resourceCulture);
             }
         }
         

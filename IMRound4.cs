@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*Jody Heideman
+ * 219307725
+ * 18 June 2021
+ * 
+ */
 namespace LanguageLearningGame
 {
     public partial class IMRound4 : Form
@@ -18,23 +23,40 @@ namespace LanguageLearningGame
            
         }
         System.Media.SoundPlayer btnClick = new System.Media.SoundPlayer(Properties.Resources.button_Click);
+        System.Media.SoundPlayer btnCorrect = new System.Media.SoundPlayer(Properties.Resources.Correct);
+        System.Media.SoundPlayer btnWrong = new System.Media.SoundPlayer(Properties.Resources.Wrong);
+        System.Media.SoundPlayer btnWon = new System.Media.SoundPlayer(Properties.Resources.Won);
+        System.Media.SoundPlayer btnLost = new System.Media.SoundPlayer(Properties.Resources.Lost);
+
         bool btnOption3IsClicked;
         int clicked = 1;
 
 
         public int scoreG = 0;
+        int attempts = 3;
         frmMainMenu menu = new frmMainMenu();
 
         public void Verify()
         {
             if (btnOption3IsClicked)
             {
+                btnCorrect.Play();
                 scoreG += 1;
                 lblScore.Text = scoreG.ToString();
                 btnOption1.Enabled = false;
                 btnOption2.Enabled = false;
                 btnOption4.Enabled = false;
 
+                if (scoreG == 4)
+                {
+                    MessageBox.Show("That was correct! ");
+                    btnWon.PlayLooping();
+                }
+                else
+                {
+                    MessageBox.Show("You didn't do so well ");
+                    btnLost.PlayLooping();
+                }
                 menu.scoreG = scoreG;
 
                 btnContinue.Visible = false;
@@ -44,19 +66,11 @@ namespace LanguageLearningGame
                 this.Hide();
 
             }
-            else if (clicked.Equals(3))
-            {
-                btnOption1.Enabled = false;
-                btnOption2.Enabled = false;
-                btnOption4.Enabled = false;
-
-                btnContinue.Visible = true;
-                MessageBox.Show("The correct answer was the 'Hello'");
-            }
             else
             {
-                MessageBox.Show("Incorrect");
-                
+                btnWrong.Play();
+                MessageBox.Show("That is not correct");
+
             }
         }
         private void btnCheck_Click(object sender, EventArgs e)
@@ -64,7 +78,23 @@ namespace LanguageLearningGame
             btnClick.Play();
             Verify();
             clicked++;
-           
+            if (clicked == 3)
+            {
+                MessageBox.Show("Attempts maxed out");
+                scoreG += 0;
+
+                btnOption1.Enabled = false;
+                btnOption2.Enabled = false;
+                btnOption3.Enabled = false;
+                btnOption4.Enabled = false;
+
+                menu.scoreG = scoreG;
+
+
+                btnContinue.Visible = true;
+                btnCheck.Enabled = false;
+            }
+
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -166,6 +196,8 @@ namespace LanguageLearningGame
         private void btnSound_Click(object sender, EventArgs e)
         {
             btnClick.Play();
+            btnWon.Stop();
+            btnLost.Stop();
         }
     }
 }

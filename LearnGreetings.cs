@@ -22,9 +22,10 @@ namespace LanguageLearningGame
             InitializeComponent();
         }
       
-        bool btnSound2IsClicked;
-        bool btnSound3IsClicked;
-        bool btnSound1IsClicked;
+        bool btnSound2IsClicked ;
+        bool btnSound3IsClicked ;
+        bool btnSound1IsClicked ;
+       
         public int scoreG = 0;
 
         System.Media.SoundPlayer btnCorrect = new System.Media.SoundPlayer(Properties.Resources.Correct);
@@ -38,8 +39,9 @@ namespace LanguageLearningGame
 
         public void Verify()
         {
-            if(btnSound1IsClicked)
+            if (btnSound1IsClicked)
             {
+
                 btnCorrect.Play();
                 scoreG += 1;
                 lblScore.Text = scoreG.ToString();
@@ -51,10 +53,10 @@ namespace LanguageLearningGame
                 btnCheck.Visible = false;
                 btnContinue.Visible = true;
 
-              
             }
             else 
             {
+
                 btnWrong.Play();
                 scoreG += 0;
                 lblScore.Text = scoreG.ToString();
@@ -62,6 +64,9 @@ namespace LanguageLearningGame
                 btnContinue.Visible = true;
                 btnCheck.Visible = false;
             }
+           
+           
+        
 
             
         }
@@ -83,8 +88,18 @@ namespace LanguageLearningGame
         private void btnSound1_Click(object sender, EventArgs e)
         {
             sndHallo.Play();
-            btnSound1IsClicked = true;
-
+       
+            
+            if (btnSound2IsClicked)
+            {
+                btnSound1IsClicked = false;
+               
+            }
+            else
+            {
+                btnSound1IsClicked = true;
+            }
+            
 
             btnCheck.Enabled = true;
         }
@@ -101,7 +116,6 @@ namespace LanguageLearningGame
             sndTot.Play();
 
             btnSound2IsClicked = true;
-           
 
             btnCheck.Enabled = true;
         }
@@ -110,7 +124,6 @@ namespace LanguageLearningGame
         {
             sndWelkom.Play();
             btnSound3IsClicked = true;
-
             btnCheck.Enabled = true;
         }
 
@@ -136,5 +149,7 @@ namespace LanguageLearningGame
         {
             sndHallo.Play();
         }
+
+       
     }
 }

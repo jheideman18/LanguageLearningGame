@@ -40,9 +40,7 @@ namespace LanguageLearningGame
             this.btnContinue = new System.Windows.Forms.Button();
             this.lblScore = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAudio = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHome
@@ -81,7 +79,7 @@ namespace LanguageLearningGame
             this.btnSound1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnSound1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSound1.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSound1.Location = new System.Drawing.Point(91, 472);
+            this.btnSound1.Location = new System.Drawing.Point(130, 472);
             this.btnSound1.Margin = new System.Windows.Forms.Padding(4);
             this.btnSound1.Name = "btnSound1";
             this.btnSound1.Size = new System.Drawing.Size(117, 47);
@@ -129,9 +127,9 @@ namespace LanguageLearningGame
             this.lblInstructions.Location = new System.Drawing.Point(16, 123);
             this.lblInstructions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInstructions.Name = "lblInstructions";
-            this.lblInstructions.Size = new System.Drawing.Size(447, 26);
+            this.lblInstructions.Size = new System.Drawing.Size(448, 26);
             this.lblInstructions.TabIndex = 6;
-            this.lblInstructions.Text = "Select the word that describes the Image below:";
+            this.lblInstructions.Text = "Listen to the audio and choose the correct word:";
             // 
             // btnCheck
             // 
@@ -190,17 +188,6 @@ namespace LanguageLearningGame
             this.button1.TabIndex = 11;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::LanguageLearningGame.Properties.Resources.Hello;
-            this.pictureBox1.Location = new System.Drawing.Point(305, 232);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 147);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnAudio
             // 
             this.btnAudio.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -224,7 +211,6 @@ namespace LanguageLearningGame
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(735, 684);
             this.Controls.Add(this.btnAudio);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.btnContinue);
@@ -242,7 +228,6 @@ namespace LanguageLearningGame
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Round 1";
             this.Load += new System.EventHandler(this.LearnGreetings_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,7 +245,6 @@ namespace LanguageLearningGame
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAudio;
     }
 }

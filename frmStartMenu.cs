@@ -21,29 +21,21 @@ namespace LanguageLearningGame
     {
         public frmStartMenu()
         {
-            Thread t = new Thread(new ThreadStart(Splash));
+            
+            Thread t = new Thread(new ThreadStart(SplashScreen));
             t.Start();
-           
+            Thread.Sleep(5000);
             InitializeComponent();
-
-            string str = string.Empty;
-
-            for (int i = 0; i < 100; i++)
-            {
-                str += i.ToString();
-            }
             t.Abort();
-
         }
-
-        public void Splash()
+        
+        public void SplashScreen()
         {
-            SplashScreen.SplashForm frm = new SplashScreen.SplashForm();
-            frm.AppName = "Crow Learning";
-            Application.Run(frm);
+            Application.Run(new frmSplashScreen());
+           
         }
 
-
+        
         System.Media.SoundPlayer bckMusic = new System.Media.SoundPlayer(Properties.Resources.Free_Synthwave_Loop);
         System.Media.SoundPlayer btnClick = new System.Media.SoundPlayer(Properties.Resources.button_Click);
         private void btnStart_Click(object sender, EventArgs e)

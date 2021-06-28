@@ -105,7 +105,7 @@ namespace LanguageLearningGame
             this.btnGreetings.Name = "btnGreetings";
             this.btnGreetings.Size = new System.Drawing.Size(215, 39);
             this.btnGreetings.TabIndex = 6;
-            this.btnGreetings.Text = "Greetings";
+            this.btnGreetings.Text = "Basics 1";
             this.btnGreetings.UseVisualStyleBackColor = false;
             this.btnGreetings.Click += new System.EventHandler(this.btnGreetings_Click);
             // 

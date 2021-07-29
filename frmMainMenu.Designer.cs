@@ -40,7 +40,6 @@ namespace LanguageLearningGame
             this.btnQuiz = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnTips = new System.Windows.Forms.Button();
-            this.btnSound = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnHome
@@ -192,7 +191,7 @@ namespace LanguageLearningGame
             this.btnTips.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnTips.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTips.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTips.Location = new System.Drawing.Point(86, 440);
+            this.btnTips.Location = new System.Drawing.Point(25, 436);
             this.btnTips.Name = "btnTips";
             this.btnTips.Size = new System.Drawing.Size(55, 37);
             this.btnTips.TabIndex = 2;
@@ -200,22 +199,6 @@ namespace LanguageLearningGame
             this.btnTips.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTips.UseVisualStyleBackColor = false;
             this.btnTips.Click += new System.EventHandler(this.btnTips_Click);
-            // 
-            // btnSound
-            // 
-            this.btnSound.BackColor = System.Drawing.Color.Transparent;
-            this.btnSound.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSound.FlatAppearance.BorderSize = 0;
-            this.btnSound.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnSound.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSound.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSound.Location = new System.Drawing.Point(12, 444);
-            this.btnSound.Name = "btnSound";
-            this.btnSound.Size = new System.Drawing.Size(68, 33);
-            this.btnSound.TabIndex = 1;
-            this.btnSound.Text = "Sound";
-            this.btnSound.UseVisualStyleBackColor = false;
-            this.btnSound.Click += new System.EventHandler(this.btnSound_Click);
             // 
             // frmMainMenu
             // 
@@ -232,7 +215,6 @@ namespace LanguageLearningGame
             this.Controls.Add(this.btnBasics2);
             this.Controls.Add(this.btnBasics);
             this.Controls.Add(this.btnTips);
-            this.Controls.Add(this.btnSound);
             this.Controls.Add(this.btnHome);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMainMenu";
@@ -247,7 +229,6 @@ namespace LanguageLearningGame
         #endregion
 
         private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnSound;
         private System.Windows.Forms.Button btnTips;
         private System.Windows.Forms.Button btnBasics;
         private System.Windows.Forms.Button btnBasics2;

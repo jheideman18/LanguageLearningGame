@@ -74,7 +74,8 @@ namespace LanguageLearningGame
             frmMainMenu mainMenu = new frmMainMenu();
 
             mainMenu.Show();
-            this.Close();
+            this.Hide();
+            
         }
 
         private void btnSound_Click(object sender, EventArgs e)

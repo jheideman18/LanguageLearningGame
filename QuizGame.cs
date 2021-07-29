@@ -70,7 +70,7 @@ namespace LanguageLearningGame
 
                     button4.BackgroundImage = Properties.Resources.spoon;
                     button4.BackgroundImageLayout = ImageLayout.Stretch;
-                    button4.Text = "Skep";
+                    button4.Text = "Lepel";
 
                     Answer = 2;
 
@@ -105,7 +105,7 @@ namespace LanguageLearningGame
 
                     button1.BackgroundImage = Properties.Resources.remote;
                     button1.BackgroundImageLayout = ImageLayout.Stretch;
-                    button1.Text = "Afgeleë";
+                    button1.Text = "Afstandbeheer";
 
                     button2.BackgroundImage = Properties.Resources.radio;
                     button2.BackgroundImageLayout = ImageLayout.Stretch;
@@ -117,7 +117,7 @@ namespace LanguageLearningGame
 
                     button4.BackgroundImage = Properties.Resources.TV;
                     button4.BackgroundImageLayout = ImageLayout.Stretch;
-                    button4.Text = "TV";
+                    button4.Text = "Televisie";
 
                     Answer = 3;
 
@@ -134,15 +134,15 @@ namespace LanguageLearningGame
 
                     button2.BackgroundImage = Properties.Resources.charger;
                     button2.BackgroundImageLayout = ImageLayout.Stretch;
-                    button2.Text = "Charger";
+                    button2.Text = "Laaier";
 
                     button3.BackgroundImage = Properties.Resources.car1;
                     button3.BackgroundImageLayout = ImageLayout.Stretch;
-                    button3.Text = "Car";
+                    button3.Text = "Kar";
 
                     button4.BackgroundImage = Properties.Resources.fridge;
                     button4.BackgroundImageLayout = ImageLayout.Stretch;
-                    button4.Text = "Fridge";
+                    button4.Text = "Yskas";
 
                     Answer = 1;
 
@@ -158,15 +158,15 @@ namespace LanguageLearningGame
 
                     button2.BackgroundImage = Properties.Resources.Glass;
                     button2.BackgroundImageLayout = ImageLayout.Stretch;
-                    button2.Text = "Glass";
+                    button2.Text = "Glas";
 
                     button3.BackgroundImage = Properties.Resources.closet;
                     button3.BackgroundImageLayout = ImageLayout.Stretch;
-                    button3.Text = "Closet";
+                    button3.Text = "Kas";
 
                     button4.BackgroundImage = Properties.Resources.TV;
                     button4.BackgroundImageLayout = ImageLayout.Stretch;
-                    button4.Text = "TV";
+                    button4.Text = "Televisie";
 
                     Answer = 3;
 
@@ -182,15 +182,15 @@ namespace LanguageLearningGame
 
                     button2.BackgroundImage = Properties.Resources.couch;
                     button2.BackgroundImageLayout = ImageLayout.Stretch;
-                    button2.Text = "Couch";
+                    button2.Text = "Rusbank";
 
                     button3.BackgroundImage = Properties.Resources.fridge;
                     button3.BackgroundImageLayout = ImageLayout.Stretch;
-                    button3.Text = "Spoon";
+                    button3.Text = "Lepel";
 
                     button4.BackgroundImage = Properties.Resources.spoon;
                     button4.BackgroundImageLayout = ImageLayout.Stretch;
-                    button4.Text = "Fridge";
+                    button4.Text = "Yskas";
 
                     Answer = 3;
 
@@ -203,19 +203,19 @@ namespace LanguageLearningGame
 
                     button1.BackgroundImage = Properties.Resources.car1;
                     button1.BackgroundImageLayout = ImageLayout.Stretch;
-                    button1.Text = "Car";
+                    button1.Text = "Kar";
 
                     button2.BackgroundImage = Properties.Resources.couch;
                     button2.BackgroundImageLayout = ImageLayout.Stretch;
-                    button2.Text = "Couch";
+                    button2.Text = "Rusbank";
 
                     button3.BackgroundImage = Properties.Resources.TV;
                     button3.BackgroundImageLayout = ImageLayout.Stretch;
-                    button3.Text = "TV";
+                    button3.Text = "Televisie";
 
                     button4.BackgroundImage = Properties.Resources.spoon;
                     button4.BackgroundImageLayout = ImageLayout.Stretch;
-                    button4.Text = "Fridge";
+                    button4.Text = "Yskas";
 
                     Answer = 3;
 
@@ -227,20 +227,20 @@ namespace LanguageLearningGame
 
                     button1.BackgroundImage = Properties.Resources.Glass;
                     button1.BackgroundImageLayout = ImageLayout.Stretch;
-                    button1.Text = "Glass";
+                    button1.Text = "Glas";
 
                     button2.BackgroundImage = Properties.Resources.charger;
                     button2.BackgroundImageLayout = ImageLayout.Stretch;
-                    button2.Text = "Charger";
+                    button2.Text = "Laaier";
 
                     button3.BackgroundImage = Properties.Resources.buikding;
 
                     button3.BackgroundImageLayout = ImageLayout.Stretch;
-                    button3.Text = "Building";
+                    button3.Text = "Gebou";
 
                     button4.BackgroundImage = Properties.Resources.phone;
                     button4.BackgroundImageLayout = ImageLayout.Stretch;
-                    button4.Text = "Phone";
+                    button4.Text = "Foon";
 
                     Answer = 2;
 
@@ -260,11 +260,11 @@ namespace LanguageLearningGame
 
                     button3.BackgroundImage = Properties.Resources.TV;
                     button3.BackgroundImageLayout = ImageLayout.Stretch;
-                    button3.Text = "TV";
+                    button3.Text = "Televisie";
 
                     button4.BackgroundImage = Properties.Resources.remote;
                     button4.BackgroundImageLayout = ImageLayout.Stretch;
-                    button4.Text = "Remote";
+                    button4.Text = "Afstandbeheer";
 
                     Answer = 4;
 
@@ -291,7 +291,7 @@ namespace LanguageLearningGame
 
                 MessageBox.Show
 
-                 ("You Completed the Quiz!\n" + "Your got\t" + TotalAnswers + "questions correctly.\n"
+                 ("You Completed the Quiz!\n" + "Your got\t " + TotalAnswers + " questions correctly.\n"
                  + "You got \t" + Percentage + "%\n");
 
                 TotalAnswers = 0;

@@ -25,7 +25,7 @@ namespace LanguageLearningGame
         private void btnHome_Click(object sender, EventArgs e)
         {
             btnClick.Play();
-
+            //Plays the sound
             startMenu.Show();
             this.Hide();
         }

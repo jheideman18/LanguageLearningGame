@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="QuizGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizGame.Designer.cs">
+      <DependentUpon>QuizGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuizGame.resx">
+      <DependentUpon>QuizGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +303,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="crow - logo.ico" />
+    <None Include="QiuzGame1.0.0\Resources\TV.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\tree.png" />
+    <None Include="QiuzGame1.0.0\Resources\toothbrush.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\table.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\spoon.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\remote.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\radio.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\pop.wav" />
+    <None Include="QiuzGame1.0.0\Resources\phone.png" />
+    <None Include="QiuzGame1.0.0\Resources\human.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\Glass.png" />
+    <None Include="QiuzGame1.0.0\Resources\fridge.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\dish.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\cup.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\couch.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\controller.jpeg" />
+    <None Include="QiuzGame1.0.0\Resources\closet.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\charger.jpg" />
+    <None Include="QiuzGame1.0.0\Resources\car.jpeg" />
+    <None Include="QiuzGame1.0.0\Resources\buikding.jpeg" />
+    <None Include="QiuzGame1.0.0\Resources\bed.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -114,6 +114,9 @@ namespace LanguageLearningGame
         private void btnQuiz_Click(object sender, EventArgs e)
         {
             btnClick.Play();
+            QuizGame quiz = new QuizGame();
+            quiz.Show();
+            this.Hide();
         }
 
         private void btnNumbers2_Click(object sender, EventArgs e)

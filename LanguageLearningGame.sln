@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageLearningGame", "Lan
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Crow Language Learning", "..\Crow Language Learning\Crow Language Learning.vdproj", "{CADD17F1-97AD-4E41-9160-76ACDF422F71}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AppSetup", "C:\Users\21930\source\repos\AppSetup\AppSetup.vdproj", "{E8B2853A-F39F-463F-96CB-0C0CE9496C89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,8 @@ Global
 		{C6B21540-ECB4-42A5-8C39-907B5425BB61}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CADD17F1-97AD-4E41-9160-76ACDF422F71}.Debug|Any CPU.ActiveCfg = Debug
 		{CADD17F1-97AD-4E41-9160-76ACDF422F71}.Release|Any CPU.ActiveCfg = Release
+		{E8B2853A-F39F-463F-96CB-0C0CE9496C89}.Debug|Any CPU.ActiveCfg = Debug
+		{E8B2853A-F39F-463F-96CB-0C0CE9496C89}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
